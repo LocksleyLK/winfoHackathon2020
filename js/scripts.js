@@ -1,12 +1,5 @@
 $(document).ready(function() {
     
-      
-    $("#trigger").click(function() {
-        
-        
-        
-    });
-    
     $('#files').change(function(e) {
         console.log(e);
         var uploadedFile = e.target.files[0];
@@ -27,7 +20,15 @@ $(document).ready(function() {
             "data": uploadedFile
         }
         $.ajax(settings).done(function (response) {
-            $("#demo").html(response.predictions[0].probability);
+            if (response.predictions[0].tagName.toLowerCase() == "positive") {
+                var positive = (response.predictions[0].probability * 100).toFixed(2) + '%';
+                var negative = (response.predictions[1].probability * 100).toFixed(2) + '%';
+            } else {
+                var positive = (response.predictions[1].probability * 100).toFixed(2) + '%';
+                var negative = (response.predictions[0].probability * 100).toFixed(2) + '%';
+            }
+            $("#positive").html(positive);
+            $("#negative").html(negative);
             console.log(response);
         });
     });
