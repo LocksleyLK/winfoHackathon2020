@@ -7,6 +7,18 @@
  * It is important that nothing is outputted yet.
  */
 
+if(isset($_GET['file'])){
+    $filename = $_FILES['file']['name'];
+    if(isset($filename) && !empty($filename)){
+        echo 'sup my man?!';
+    }else{
+        echo 'please choose a file';
+    }
+}else{
+    echo 'not set';
+}
+
+
 
 
 // $output will be converted into JSON
