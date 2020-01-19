@@ -4,6 +4,8 @@ A web app created for the 8th annual WINFO Hackathon.
 
 [Link to GitHub Pages](https://locksleylk.github.io/winfoHackathon2020/index.html)
 
+# Introduction
+
 Did you know ¾ of the approximate 36 million people worldwide living with Alzheimer’s disease don’t know they have it? That is 27 million people!
 
 To combat this problem, we created ClockWork, a website that uses the scientifically proven method of drawing a clock face, to test for Alzheimer’s Disease. 
@@ -11,6 +13,8 @@ To combat this problem, we created ClockWork, a website that uses the scientific
 If you can draw a clock face with hands and numbers in the right place, you likely do not have Alzheimer’s. If you cannot remember where to place the numbers or hands, then you likely have Alzheimer’s. In other words, our algorithm does not test for artistic skill; it tests for memory. 
 
 Our goal is to help users target Alzheimer’s Disease early to increase their access to treatment to live longer with a higher quality of life.
+
+# About Our Project
 
 After drawing a clock face, the website returns a percentage determining your likelihood of testing positive or negative for Alzheimer’s disease.
 
