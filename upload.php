@@ -1,6 +1,6 @@
 <?php
 
-$remoteOrigin = "file:///C:/Users/luxur/Documents/GitHub/winfoHackathon2020/index.html"; //change to the origin of your webpage
+$remoteOrigin = "https://locksleylk.github.io/winfoHackathon2020/"; //change to the origin of your webpage
 
 
 
