@@ -27,7 +27,7 @@ $(document).ready(function() {
 
     $('input[type=file]').change(function(){
 
-		$(this).simpleUpload("upload.php", {
+		$(this).simpleUpload("/ajax/upload.php", {
 
 			start: function(file){
 				//upload started
